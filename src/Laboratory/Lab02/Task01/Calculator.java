@@ -27,12 +27,12 @@ public class Calculator {
     }
 
 
-    public int division(int a, int b) {
-        return a / b;
+    public double division(int a, int b) {
+        return a / (double)b;
     }
 
-    public long division(long a, long b) {
-        return a / b;
+    public double division(long a, long b) {
+        return a / (double)b;
     }
 
     public double division(double a, double b) {

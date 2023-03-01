@@ -90,4 +90,11 @@ public class Car {
                 + "максимальная скорость: " + maxSpeed + "\n"
                 + "наличие автоматической коробки передач: " + (isAutomaticTransmission ? "Да" : "Нет") + "\n";
     }
+
+    public String getInfoDiscount(int percent) {
+        double newPrice = price * (1 - (percent / 100.0));
+        return "Новая цена автомобиля " + name + " " + description + " " + color + " " +
+                "составляет " + newPrice + " рублей," + "\n" +
+                "старая - " + price + " рублей" + "\n";
+    }
 }
